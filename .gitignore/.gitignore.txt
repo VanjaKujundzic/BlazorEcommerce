@@ -4,7 +4,12 @@
 *.pdb
 
 # Ignore directories
-bin/
+.BlazorEcommerce/Server/bin/
+.BlazorEcommerce/Server/obj/
+.BlazorEcommerce/Client/bin/
+.BlazorEcommerce/Client/obj/
+.BlazorEcommerce/Shared/bin/
+.BlazorEcommerce/Shared/obj/
 obj/
 
 # Ignore user-specific files
@@ -18,3 +23,6 @@ obj/
 
 # Ignore node_modules directory (for JavaScript projects)
 node_modules/
+
+#ignore vs directory
+.vs/
