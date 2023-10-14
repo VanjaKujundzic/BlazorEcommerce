@@ -11,6 +11,16 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Ignore Visual Studio files
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore build folders
+/bin/
+/obj/
+
+
 # User-specific files
 *.rsuser
 *.suo
