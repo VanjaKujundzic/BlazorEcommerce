@@ -28,11 +28,6 @@
 </div>
 
 
-
-
-
-
-
 @code {
     private string searchText = string.Empty;
     private List<string> suggestions = new List<string>();
@@ -51,7 +46,7 @@
 
     public void SearchProducts()
     {
-        NavigationManager.NavigateTo($"search/{searchText}");
+        NavigationManager.NavigateTo($"search/{searchText}/1");
     }
     public async Task HandleSearch(KeyboardEventArgs args)
     {
