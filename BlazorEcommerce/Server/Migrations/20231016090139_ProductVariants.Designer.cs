@@ -3,6 +3,7 @@ using BlazorEcommerce.Server.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorEcommerce.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231016090139_ProductVariants")]
+    partial class ProductVariants
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -265,42 +268,7 @@ namespace BlazorEcommerce.Server.Migrations
                         },
                         new
                         {
-                            ProductId = 1,
-                            ProductTypeId = 3,
-                            OriginalPrice = 29.99m,
-                            Price = 7.99m
-                        },
-                        new
-                        {
-                            ProductId = 1,
-                            ProductTypeId = 4,
-                            OriginalPrice = 19.99m,
-                            Price = 3.99m
-                        },
-                        new
-                        {
                             ProductId = 2,
-                            ProductTypeId = 3,
-                            OriginalPrice = 19.99m,
-                            Price = 5.99m
-                        },
-                        new
-                        {
-                            ProductId = 2,
-                            ProductTypeId = 2,
-                            OriginalPrice = 39.99m,
-                            Price = 15.99m
-                        },
-                        new
-                        {
-                            ProductId = 3,
-                            ProductTypeId = 2,
-                            OriginalPrice = 39.99m,
-                            Price = 15.99m
-                        },
-                        new
-                        {
-                            ProductId = 3,
                             ProductTypeId = 3,
                             OriginalPrice = 19.99m,
                             Price = 5.99m
@@ -310,14 +278,7 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductId = 3,
                             ProductTypeId = 4,
                             OriginalPrice = 19.99m,
-                            Price = 8.99m
-                        },
-                        new
-                        {
-                            ProductId = 4,
-                            ProductTypeId = 5,
-                            OriginalPrice = 39.99m,
-                            Price = 29.99m
+                            Price = 5.99m
                         },
                         new
                         {
@@ -328,31 +289,10 @@ namespace BlazorEcommerce.Server.Migrations
                         },
                         new
                         {
-                            ProductId = 4,
-                            ProductTypeId = 7,
-                            OriginalPrice = 39.99m,
-                            Price = 3.99m
-                        },
-                        new
-                        {
-                            ProductId = 5,
-                            ProductTypeId = 5,
-                            OriginalPrice = 39.99m,
-                            Price = 12.99m
-                        },
-                        new
-                        {
-                            ProductId = 5,
-                            ProductTypeId = 6,
-                            OriginalPrice = 39.99m,
-                            Price = 10.99m
-                        },
-                        new
-                        {
                             ProductId = 5,
                             ProductTypeId = 7,
                             OriginalPrice = 39.99m,
-                            Price = 3.99m
+                            Price = 9.99m
                         },
                         new
                         {
@@ -360,27 +300,13 @@ namespace BlazorEcommerce.Server.Migrations
                             ProductTypeId = 10,
                             OriginalPrice = 59.99m,
                             Price = 7.99m
-                        },
-                        new
-                        {
-                            ProductId = 6,
-                            ProductTypeId = 9,
-                            OriginalPrice = 59.99m,
-                            Price = 12.99m
-                        },
-                        new
-                        {
-                            ProductId = 7,
-                            ProductTypeId = 10,
-                            OriginalPrice = 59.99m,
-                            Price = 19.99m
                         },
                         new
                         {
                             ProductId = 7,
                             ProductTypeId = 8,
                             OriginalPrice = 59.99m,
-                            Price = 9.99m
+                            Price = 19.99m
                         },
                         new
                         {
